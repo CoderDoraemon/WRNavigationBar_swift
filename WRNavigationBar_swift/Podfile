@@ -10,5 +10,6 @@ target ‘WRNavigationBar_swift’ do
     
     #swift
     pod 'Kingfisher'
+    pod 'DeviceKit'
 
 end
