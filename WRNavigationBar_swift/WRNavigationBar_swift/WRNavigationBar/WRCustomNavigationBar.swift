@@ -148,7 +148,8 @@ class WRCustomNavigationBar: UIView
     // fileprivate other variable
     fileprivate static var isIphoneX:Bool {
         get {
-            return UIScreen.main.bounds.equalTo(CGRect(x: 0, y: 0, width: 375, height: 812))
+//            return UIScreen.main.bounds.equalTo(CGRect(x: 0, y: 0, width: 375, height: 812))
+            return UIDevice.isiPhoneXSeries
         }
     }
     fileprivate static var navBarBottom:Int {
