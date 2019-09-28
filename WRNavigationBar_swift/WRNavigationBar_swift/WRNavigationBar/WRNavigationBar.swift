@@ -418,6 +418,11 @@ extension UINavigationController: UINavigationBarDelegate
 {
     public func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UINavigationItem) -> Bool
     {
+        //TODO: iOS13特殊处理，返回动画有问题
+        if #available(iOS 13.0, *) {
+            return true
+        }
+        
         if let topVC = topViewController,
            let coor = topVC.transitionCoordinator, coor.initiallyInteractive {
             if #available(iOS 10.0, *) {

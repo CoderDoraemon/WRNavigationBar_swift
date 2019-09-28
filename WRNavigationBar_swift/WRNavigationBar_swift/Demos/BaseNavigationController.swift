@@ -25,4 +25,8 @@ extension BaseNavigationController
         }
         super.pushViewController(viewController, animated: animated)
     }
+    
+//    override func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UINavigationItem) -> Bool {
+//        return true
+//    }
 }
